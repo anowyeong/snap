@@ -2,6 +2,22 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>SCSDKScopes </key>
+	<string></string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array/>
+	<key>SCSDKScopes</key>
+	<array/>
+	<key>CFBundleURLSchemes</key>
+	<array/>
+	<key>CFBundleDisplayName</key>
+	<string>LSApplicationQueriesSchemes</string>
+	<key>LSApplicationCategoryType</key>
+	<string></string>
+	<key>SCSDKClientId</key>
+	<string></string>
+	<key>SCSDKRedirectUrl</key>
+	<string></string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>

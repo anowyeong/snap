@@ -17,6 +17,10 @@
 		CC39A95B222B5AC600854E43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC39A959222B5AC600854E43 /* LaunchScreen.storyboard */; };
 		CC39A966222B5AC600854E43 /* snapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC39A965222B5AC600854E43 /* snapTests.swift */; };
 		CC39A971222B5AC600854E43 /* snapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC39A970222B5AC600854E43 /* snapUITests.swift */; };
+		F6853ED3222B64F1003A2E8F /* SCSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6853ED2222B64F1003A2E8F /* SCSDKCoreKit.framework */; };
+		F6853ED4222B64F1003A2E8F /* SCSDKCoreKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F6853ED2222B64F1003A2E8F /* SCSDKCoreKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F6853ED7222B650A003A2E8F /* SCSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6853ED6222B6509003A2E8F /* SCSDKLoginKit.framework */; };
+		F6853ED8222B650A003A2E8F /* SCSDKLoginKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F6853ED6222B6509003A2E8F /* SCSDKLoginKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F6DA058B222B604100BEB145 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DA058A222B604100BEB145 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +40,21 @@
 			remoteInfo = snap;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F6853ED5222B64F1003A2E8F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F6853ED8222B650A003A2E8F /* SCSDKLoginKit.framework in Embed Frameworks */,
+				F6853ED4222B64F1003A2E8F /* SCSDKCoreKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		01667C6B1FAEE4D48C612497 /* Pods_snapUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_snapUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,6 +79,8 @@
 		CC39A970222B5AC600854E43 /* snapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = snapUITests.swift; sourceTree = "<group>"; };
 		CC39A972222B5AC600854E43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5834DBA79D3991028C5987D /* Pods-snap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-snap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-snap/Pods-snap.debug.xcconfig"; sourceTree = "<group>"; };
+		F6853ED2222B64F1003A2E8F /* SCSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SCSDKCoreKit.framework; path = Pods/SnapSDK/SCSDKCoreKit.framework; sourceTree = "<group>"; };
+		F6853ED6222B6509003A2E8F /* SCSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SCSDKLoginKit.framework; path = Pods/SnapSDK/SCSDKLoginKit.framework; sourceTree = "<group>"; };
 		F6DA058A222B604100BEB145 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -68,7 +89,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6853ED7222B650A003A2E8F /* SCSDKLoginKit.framework in Frameworks */,
 				28A6C18EE001689671B784A4 /* Pods_snap.framework in Frameworks */,
+				F6853ED3222B64F1003A2E8F /* SCSDKCoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +117,8 @@
 		CC39A944222B5AC300854E43 = {
 			isa = PBXGroup;
 			children = (
+				F6853ED6222B6509003A2E8F /* SCSDKLoginKit.framework */,
+				F6853ED2222B64F1003A2E8F /* SCSDKCoreKit.framework */,
 				CC39A94F222B5AC300854E43 /* snap */,
 				CC39A964222B5AC600854E43 /* snapTests */,
 				CC39A96F222B5AC600854E43 /* snapUITests */,
@@ -180,6 +205,7 @@
 				CC39A94A222B5AC300854E43 /* Frameworks */,
 				CC39A94B222B5AC300854E43 /* Resources */,
 				D57802DA2BB7FDC349450771 /* [CP] Embed Pods Frameworks */,
+				F6853ED5222B64F1003A2E8F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -591,6 +617,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/SnapSDK",
+				);
 				INFOPLIST_FILE = snap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -609,6 +639,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/SnapSDK",
+				);
 				INFOPLIST_FILE = snap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
