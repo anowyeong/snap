@@ -17,6 +17,7 @@
 		CC39A95B222B5AC600854E43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC39A959222B5AC600854E43 /* LaunchScreen.storyboard */; };
 		CC39A966222B5AC600854E43 /* snapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC39A965222B5AC600854E43 /* snapTests.swift */; };
 		CC39A971222B5AC600854E43 /* snapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC39A970222B5AC600854E43 /* snapUITests.swift */; };
+		F6DA058B222B604100BEB145 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DA058A222B604100BEB145 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		CC39A970222B5AC600854E43 /* snapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = snapUITests.swift; sourceTree = "<group>"; };
 		CC39A972222B5AC600854E43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5834DBA79D3991028C5987D /* Pods-snap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-snap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-snap/Pods-snap.debug.xcconfig"; sourceTree = "<group>"; };
+		F6DA058A222B604100BEB145 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 				CC39A950222B5AC300854E43 /* AppDelegate.swift */,
 				CC39A952222B5AC300854E43 /* ViewController.swift */,
 				CC39A954222B5AC300854E43 /* Main.storyboard */,
+				F6DA058A222B604100BEB145 /* LoginViewController.swift */,
 				CC39A957222B5AC600854E43 /* Assets.xcassets */,
 				CC39A959222B5AC600854E43 /* LaunchScreen.storyboard */,
 				CC39A95C222B5AC600854E43 /* Info.plist */,
@@ -397,6 +400,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6DA058B222B604100BEB145 /* LoginViewController.swift in Sources */,
 				CC39A953222B5AC300854E43 /* ViewController.swift in Sources */,
 				CC39A951222B5AC300854E43 /* AppDelegate.swift in Sources */,
 			);
