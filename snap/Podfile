@@ -9,6 +9,7 @@ target 'snap' do
   pod 'AFNetworking'
   pod 'BDBOAuth1Manager'
   pod 'AlamofireImage'
+  pod 'SnapSDK'
 
   target 'snapTests' do
     inherit! :search_paths

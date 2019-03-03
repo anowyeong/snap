@@ -19,11 +19,23 @@ PODS:
     - Alamofire (~> 4.8)
   - BDBOAuth1Manager (2.0.0):
     - AFNetworking/NSURLSession (~> 3.0.0)
+  - PINCache (2.3)
+  - PINOperation (1.1.1)
+  - SnapSDK (1.2.2):
+    - SnapSDK/SCSDKBitmojiKit (= 1.2.2)
+    - SnapSDK/SCSDKCreativeKit (= 1.2.2)
+    - SnapSDK/SCSDKLoginKit (= 1.2.2)
+  - SnapSDK/SCSDKBitmojiKit (1.2.2):
+    - PINCache (< 3.1, >= 2.3)
+    - PINOperation (~> 1.1)
+  - SnapSDK/SCSDKCreativeKit (1.2.2)
+  - SnapSDK/SCSDKLoginKit (1.2.2)
 
 DEPENDENCIES:
   - AFNetworking
   - AlamofireImage
   - BDBOAuth1Manager
+  - SnapSDK
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -31,13 +43,19 @@ SPEC REPOS:
     - Alamofire
     - AlamofireImage
     - BDBOAuth1Manager
+    - PINCache
+    - PINOperation
+    - SnapSDK
 
 SPEC CHECKSUMS:
   AFNetworking: a0075feb321559dc78d9d85b55d11caa19eabb93
   Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
   AlamofireImage: 1aea346f4dda2f6c67622fa5a89fcbb80d79cc16
   BDBOAuth1Manager: 92d17d06f8a648602962304cd2f35ae7394fa001
+  PINCache: ce36ed282031b92fc7733ffe831f474ff80fddc2
+  PINOperation: a6219e6fc9db9c269eb7a7b871ac193bcf400aac
+  SnapSDK: 16d505e0e5a9340c49ce767f3131f4af76fe29e8
 
-PODFILE CHECKSUM: 13bc095b0b0947e62c3bfeaa249741288275c2e0
+PODFILE CHECKSUM: 80255bb38bed58f9109a47cbeb1b6748be63d251
 
 COCOAPODS: 1.5.3
